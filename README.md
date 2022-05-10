@@ -10,11 +10,10 @@ This is a monorepository.  All applicaiton policies are in this repository.
 
 The structure is as follows
 
-|- root
-
-|   |- organization-name
-
-|   |   |- application-name
-
-|   |   |   |- *.rego
-
+```text
+project root
+|
+|- organization-name
+|   |- application-name
+|   |   |- *.rego
+```
