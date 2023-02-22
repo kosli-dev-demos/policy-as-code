@@ -6,7 +6,10 @@ default complexityPass = false
 default staticCodeAnalysisPass = false
 
 unitTestPass {
-    input.workflow.unitTest.attestations.testQuantity == input.workflow.unitTest.attestations.passQuantity
+    input.workflow.unit-test.attestations.tests > 0
+    input.workflow.unit-test.attestations.skipped == 0
+    input.workflow.unit-test.attestations.errors == 0
+    input.workflow.unit-test.attestations.failures == 0
 }
 
 codeCoveragePass  {
